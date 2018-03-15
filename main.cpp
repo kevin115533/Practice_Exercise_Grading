@@ -5,6 +5,7 @@ void calculateGrade(int x);
 
 int main() {
 	int grade;
+	char question;
 	char goAgain=true;
 
 	while (goAgain == true) {
@@ -14,8 +15,8 @@ int main() {
 		calculateGrade(grade);
 
 		cout << "Enter another grade? y/n" << endl;
-		cin >> goAgain;
-		if (goAgain == 'Y'|| goAgain =='y') {
+		cin >> question;
+		if (question == 'Y'|| question =='y') {
 			goAgain = true;
 		}
 		else {
